@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 class EventsController < ApplicationController
+
   def index
     @events = Event.upcoming
   end
@@ -35,10 +34,11 @@ class EventsController < ApplicationController
     redirect_to events_url
   end
 
-  private
+private
 
   def event_params
-    params.require(:event)
-          .permit(:name, :description, :location, :price, :starts_at)
+    params.require(:event).
+      permit(:name, :description, :location, :price, :starts_at,
+             :capacity, :image_file_name)
   end
 end
