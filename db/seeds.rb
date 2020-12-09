@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first) #
-
 User.create!(name: 'TestUser',
              email: 'test_user@gmail.com',
              password: '123456',
@@ -47,7 +39,9 @@ Event.create!([
                   price: 75.00,
                   starts_at: 65.days.from_now,
                   description: %(
-      Kata Camp is where developers go to practice their craft without interruptions. Skip the status reports and stand-up meetings of a typical project. Just get 'er done! Price includes a buffet lunch and a leather-bound journal to record your kata achievements.
+      Kata Camp is where developers go to practice their craft without interruptions.
+      Skip the status reports and stand-up meetings of a typical project. Just get 'er done!
+      Price includes a buffet lunch and a leather-bound journal to record your kata achievements.
     ).squish,
                   capacity: 30
                 },
@@ -57,7 +51,8 @@ Event.create!([
                   price: 0.00,
                   starts_at: 20.days.ago,
                   description: %(
-      Start your day off right with a good cup of Joe while you sling some code with other local developers. By the time you hit the office, you'll be in the groove!
+      Start your day off right with a good cup of Joe while you sling some code with other local developers.
+      By the time you hit the office, you'll be in the groove!
     ).squish,
                   capacity: 15
                 },
@@ -67,7 +62,8 @@ Event.create!([
                   price: 0.00,
                   starts_at: 2.days.ago,
                   description: %(
-      Come enjoy a technical talk and meet local Rails developers! This week's topic is a comparison of editors, templating systems, and whether to use tabs or spaces.
+      Come enjoy a technical talk and meet local Rails developers! This week's topic is a comparison of editors,
+      templating systems, and whether to use tabs or spaces.
     ).squish,
                   capacity: 15
                 },
@@ -88,7 +84,9 @@ Event.create!([
                   price: 15.00,
                   starts_at: 10.days.ago,
                   description: %(
-      Got a newfangled trick? A handy new tool? A just-released library? Here's your chance to share it! But you only get 5 minutes to present your must-know tip, so keep it snappy. Price includes an open ice cream and root beer float bar.
+      Got a newfangled trick? A handy new tool? A just-released library? Here's your chance to share it!
+      But you only get 5 minutes to present your must-know tip, so keep it snappy. Price includes an open
+      ice cream and root beer float bar.
     ).squish,
                   capacity: 12
                 },
@@ -99,7 +97,8 @@ Event.create!([
                   starts_at: 90.days.from_now,
                   description: %{
       What happens when software and hardware geeks get together?
-      Thing spin, whirl, and (possibly) collide! Everyone is welcome, whether you're new to hacking with drones and drone software, or have experience that reaches to the sky.
+      Thing spin, whirl, and (possibly) collide! Everyone is welcome, whether you're new to hacking with drones
+      and drone software, or have experience that reaches to the sky.
     }.squish,
                   capacity: 45
                 },
@@ -116,11 +115,11 @@ Event.create!([
               ])
 
 # [
-#   %w[BugSmash bugsmash.png],
-#   %w[Hackathon hackathon.png],
+#   ['BugSmash', 'bugsmash.png'],
+#   ['Hackathon', 'hackathon.png'],
 #   ['Kata Camp', 'katacamp.png'],
 #   ["Coffee 'n Code", 'coffee-code.png'],
-#   ['RRails User Group', 'rails-user-group.png'],
+#   ['Rails User Group', 'rails-user-group.png'],
 #   ['Ruby User Group', 'ruby-user-group.png'],
 #   ['5-Minute Lightning Talks', 'lightning.png'],
 #   ['Drone Zone', 'drone-zone.png'],

@@ -15,7 +15,7 @@
     <% @registrations.each do |r| %>
       <div class="registration">
         <div class="image">
-          <%= link_to main_image(event), r.event %>
+          <%= link_to main_image(r.event), r.event %>
         </div>
         <div class="name">
           <%= link_to r.event.name, r.event %>
