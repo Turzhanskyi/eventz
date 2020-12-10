@@ -1,4 +1,8 @@
-# Ruby on Rails 6
+# *Eventz* Ruby on Rails 6
 ## The Pragmatic Studio
 
-### <https://fathomless-forest-43692.herokuapp.com/>
+### Deploy to HEROKU with AMAZON S3: <https://turviteventz.herokuapp.com/>
+
+#### Admin User:
+- email: test_user@gmail.com
+- password: 123456
